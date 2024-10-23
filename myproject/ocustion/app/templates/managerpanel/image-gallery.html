@@ -1,0 +1,76 @@
+﻿{% extends "managerpanel/index.html" %}
+{%block content%}
+<head>
+    <style>
+      
+        img{
+            scale: 1;
+            transition: 1s;
+        }
+        img:hover{
+            scale: 1.1;
+        }
+       
+       
+        
+    </style>
+</head>
+<section class="content home" >
+            <div class="block-header">
+                <div class="row">
+                    <div class="col-lg-5 col-md-5 col-sm-12">
+                        <h2>Gallery <small class="text-muted">Welcome to Event</small></h2>
+                    </div>            
+                    <div class="col-lg-7 col-md-7 col-sm-12 text-right">
+                        
+                        
+                        
+                        <ul class="breadcrumb float-md-right">
+                            <li class="breadcrumb-item"><a href="..\dashboard\index.html"><i class="zmdi zmdi-home"></i> OcusionOrbit</a></li>
+                                                            <li class="breadcrumb-item">Media</li>
+                                                                                        <li class="breadcrumb-item active">Gallery</li>
+                                                    </ul>
+                    </div>
+                </div>
+            </div>
+<div class="container-fluid a">                
+                <div class="row">
+    <div class="col-sm-12" >
+        <div class="card b">
+            <div class="header">
+                <h2><strong>Gallery</strong>  </h2>
+                <ul class="header-dropdown">
+                    <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i class="zmdi zmdi-more"></i> </a>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="javascript:void(0);">Action</a></li>
+                            <li><a href="javascript:void(0);">Another action</a></li>
+                            <li><a href="javascript:void(0);">Something else</a></li>
+                        </ul>
+                    </li>
+                    <li class="remove">
+                        <a role="button" class="boxs-close"><i class="zmdi zmdi-close"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="body">
+                <div id="aniimated-thumbnials" class="list-unstyled row clearfix" >
+                    {%for i in e_all%}
+                    
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 m-b-20 a">
+                        <p style="text-align: center;">Event Title : {{i.event_title}}</p>
+                        <p style="text-align: center;">UserID : {{i.userid}}</p>
+                         <a href="..\assets\images\image-gallery\1.jpg">
+                             <img class="img-fluid img-thumbnail" src="{{i.img.url}}" alt="" style="border-radius: 20px;border: 3px solid black;width: 300px; height: 200px;object-fit: cover;" >   
+                        </a> 
+                    </div>
+                    {%endfor%}
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            </div>
+</section>
+{%endblock%}
+      

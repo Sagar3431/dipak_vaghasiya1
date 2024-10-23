@@ -1,0 +1,243 @@
+{% extends "customerpanel/index.html" %}
+{%block content%}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: #fff;
+           
+        }
+        
+        .card{
+            margin-top: 20px;
+            border:none;
+        
+            position:relative;
+            overflow:hidden;
+            border-radius:8px;
+            cursor:pointer;
+        }
+        
+        .card:before{
+            
+            content:"";
+            position:absolute;
+            left:0;
+            top:0;
+            width:4px;
+            height:100%;
+            background-color:#E1BEE7;
+            transform:scaleY(1);
+            transition:all 0.5s;
+            transform-origin: bottom
+        }
+        
+        .card:after{
+            
+            content:"";
+            position:absolute;
+            left:0;
+            top:0;
+            width:4px;
+            height:100%;
+            background-color:#8E24AA;
+            transform:scaleY(0);
+            transition:all 0.5s;
+            transform-origin: bottom
+        }
+        
+        .card:hover::after{
+            transform:scaleY(1);
+        }
+        
+        
+        .fonts{
+            font-size:11px;
+        }
+        
+        .social-list{
+            display:flex;
+            list-style:none;
+            justify-content:center;
+            padding:0;
+        }
+        
+        .social-list li{
+            padding:10px;
+            color:#8E24AA;
+            font-size:19px;
+        }
+        
+        .buttons{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            font-size: 20px;
+        }
+        .buttons a{
+            text-decoration: none;
+            list-style: none;
+            color: #f5f4f4;
+        }
+        .a{
+            padding: 15px;
+            background: #40E0D0;
+            border-radius: 10px;
+            transition: 0.6s;
+        }
+        .a:hover{
+            background: #237b8e6d;
+        }
+        .b{
+            padding: 15px;
+            background: #6495ED;
+            border-radius: 10px;
+            transition: 0.6s;
+        }
+        .b:hover{
+            background: #237b8e6d;
+        }
+        .h2{
+            background: #40E0D0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-left: 0px;
+            padding-top: 15px;
+            margin-top: 60px;
+            font-size: 15px;
+            gap: 15px;
+
+
+        }
+        p{
+            margin-top: 15px;
+        }
+        small{
+            font-size: 15px !important;
+        }
+        h2{
+            margin-left: 250px;
+        }
+        ul{
+            margin-right: 5px;
+            
+        }
+        li{
+            padding-top: 10px;
+        }
+        .container{
+            width: 40rem;
+            background: url("https://images.ctfassets.net/co0pvta7hzrh/1HOajBVHsh7xunfUnjpDNE/c94d271e8f90a6bf6016fc1d275d7a74/e_commerce_registration_form_template_thumb.png");
+            color: white;
+            border-radius: 20px;
+            margin-left: 500px;
+            
+        }
+       
+        
+        
+        
+    </style>
+</head>
+<section>
+    <div>
+    <div class="h2">
+            <h2>&nbsp;&nbsp;&nbsp; Gallery <small>Welcome to OcusionOrbit</small></h2>
+            
+    
+                 
+            <ul class="breadcrumb float-md-right ">
+                <li class="breadcrumb-item"><a href="..\dashboard\index.html"><i class="zmdi zmdi-home"></i> OcusionOrbit</a></li>
+                                                <li class="breadcrumb-item">All Manager</li>
+                                                                            <li class="breadcrumb-item active">Create-Event</li>
+                                        </ul>
+        </div>
+   
+    
+        <div class="container mt-5">
+            <h1 style="text-align: center;">Create Event</h1>
+            <form method="POST" action="{% url 'book_event_request_logic'%}">
+                {% csrf_token %}
+                
+                <!-- Manager User ID -->
+                <div class="mb-3">
+                    <input type="hidden" value="{{mid.id}}" name="mid">
+                    <input type="hidden" value="{{cid.id}}">
+                    <label for="manager_userid" class="form-label">Manager UserName</label>
+                    <input type="text" value="{{mid.username}}" disabled>
+                </div>
+    
+                <!-- Event Category -->
+                <div class="mb-3">
+                    <label for="event_catagory" class="form-label">Event Category</label>
+                    <input list="event" type="text" class="form-control" id="event_catagory" name="event_catagory" placeholder="Enter event category">
+                    <datalist id="event">
+                        <option value="Birthday Party"></option>
+                        <option value="Corporate Party"></option>
+                        <option value="Wedding Party"></option>
+                        <option value="Ferwell Party"></option>
+                    </datalist>
+                </div>
+    
+                <!-- Date -->
+                <div class="mb-3">
+                    <label for="date" class="form-label">Date</label>
+                    <input type="date" class="form-control" id="date" name="date" placeholder="Enter event date (e.g., YYYY-MM-DD)">
+                </div>
+    
+                <!-- Time -->
+                <div class="mb-3">
+                    <label for="time" class="form-label">Time</label>
+                    <input type="time" class="form-control" id="time" name="time" placeholder="Enter event time">
+                </div>
+    
+                <!-- Venue -->
+                <div class="mb-3">
+                    <label for="venue" class="form-label">Venue</label>
+                    <input type="text" class="form-control" id="venue" name="venue" placeholder="Enter venue">
+                </div>
+    
+                <!-- Expected Persons -->
+                <div class="mb-3">
+                    <label for="expected_persons" class="form-label">Expected Persons</label>
+                    <input type="text" class="form-control" id="expected_persons" name="expected_persons" placeholder="Enter expected number of persons">
+                </div>
+    
+                <!-- Event Confirmation Status -->
+                <div class="mb-3">
+                    <label for="event_conformation_status" class="form-label">Event Confirmation Status</label>
+                    <select class="form-select" id="event_conformation_status" name="event_conformation_status">
+                        <option value="pending" selected>Pending</option>
+                        <option value="confirmed" disabled>Confirmed</option>
+                        <option value="canceled" disabled>Canceled</option>
+                    </select>
+                </div>
+    
+                <!-- Expected Price -->
+                <div class="mb-3">
+                    <label for="expected_price" class="form-label">Expected Price</label>
+                    <input type="text" class="form-control" id="expected_price" name="expected_price" placeholder="Enter expected price">
+                </div>
+    
+                <!-- Payment Mode -->
+                <div class="mb-3">
+                    <label for="payment_mode" class="form-label">Payment Mode</label>
+                    <input type="text" class="form-control" id="payment_mode" name="payment_mode" placeholder="Enter payment mode">
+                </div>
+                
+                <!-- Description -->
+                <div class="mb-3">
+                    <label for="description" class="form-label">Description</label>
+                    <textarea class="form-control" id="description" name="description" rows="3" placeholder="Enter event description"></textarea>
+                </div>
+    
+                <!-- Submit Button -->
+                <input type="submit" class="btn btn-primary" value="submit">
+            </form>
+        </div>
+</section>
+{%endblock%}

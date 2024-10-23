@@ -1,0 +1,75 @@
+﻿{% extends "managerpanel/index.html" %}
+{%block content%}
+<section class="content home">
+            <div class="block-header">
+                <div class="row">
+                    <div class="col-lg-5 col-md-5 col-sm-12">
+                        <h2>Add media <small class="text-muted">Welcome to OcusionOrbit</small></h2>
+                    </div>            
+                    <div class="col-lg-7 col-md-7 col-sm-12 text-right">
+                        
+                        
+                        
+                        <ul class="breadcrumb float-md-right">
+                            <li class="breadcrumb-item"><a href="..\dashboard\index.html"><i class="zmdi zmdi-home"></i> OcusionOrbit</a></li>
+                                                            <li class="breadcrumb-item">Media</li>
+                                                                                        <li class="breadcrumb-item active">Add Media</li>
+                                                    </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">                
+                
+<div class="row clearfix">
+    <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="card">
+            <div class="header">
+                <h2><strong>ADD</strong> Media </h2>
+                <ul class="header-dropdown">                            
+                    <li class="remove">
+                        <a role="button" class="boxs-close"><i class="zmdi zmdi-close"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="body">
+                <div class="flex clearfix">
+                    <form action="{% url 'add_event' %}" method="post" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        {%if s_msg%}
+                            <div class="alert alert-success" role="alert">
+                                {{s_msg}}
+                            </div>
+                        {%endif%}
+                        {% csrf_token %}
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <p>event_title : </p>
+                            <input type="text" class="form-control" placeholder="event_title" name="event_title">
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <p>image : </p>
+                            <input type="file" class="form-control" name="img">
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <p>Video : </p>
+                            <input type="file" class="form-control" name="videofile">
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <input type="submit" class="btn btn-primary btn-round" value="Submit">
+                    </div>
+                </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+</section>
+{%endblock%}

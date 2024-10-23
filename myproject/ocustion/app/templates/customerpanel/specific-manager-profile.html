@@ -1,0 +1,195 @@
+{% extends "customerpanel/index.html" %}
+{%block content%}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background:#eee;
+           
+        }
+        
+        .card{
+            margin-top: 20px;
+            border:none;
+        
+            position:relative;
+            overflow:hidden;
+            border-radius:8px;
+            cursor:pointer;
+        }
+        
+        .card:before{
+            
+            content:"";
+            position:absolute;
+            left:0;
+            top:0;
+            width:4px;
+            height:100%;
+            background-color:#E1BEE7;
+            transform:scaleY(1);
+            transition:all 0.5s;
+            transform-origin: bottom
+        }
+        
+        .card:after{
+            
+            content:"";
+            position:absolute;
+            left:0;
+            top:0;
+            width:4px;
+            height:100%;
+            background-color:#8E24AA;
+            transform:scaleY(0);
+            transition:all 0.5s;
+            transform-origin: bottom
+        }
+        
+        .card:hover::after{
+            transform:scaleY(1);
+        }
+        
+        
+        .fonts{
+            font-size:11px;
+        }
+        
+        .social-list{
+            display:flex;
+            list-style:none;
+            justify-content:center;
+            padding:0;
+        }
+        
+        .social-list li{
+            padding:10px;
+            color:#8E24AA;
+            font-size:19px;
+        }
+        
+        .buttons{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            font-size: 20px;
+        }
+        .buttons a{
+            text-decoration: none;
+            list-style: none;
+            color: #f5f4f4;
+        }
+        .a{
+            padding: 15px;
+            background: #40E0D0;
+            border-radius: 10px;
+            transition: 0.6s;
+        }
+        .a:hover{
+            background: #237b8e6d;
+        }
+        .b{
+            padding: 15px;
+            background: #6495ED;
+            border-radius: 10px;
+            transition: 0.6s;
+        }
+        .b:hover{
+            background: #237b8e6d;
+        }
+        .h2{
+            background: #40E0D0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-left: 0px;
+            padding-top: 15px;
+            margin-top: 60px;
+            font-size: 15px;
+            gap: 15px;
+
+
+        }
+        p{
+            margin-top: 15px;
+        }
+        small{
+            font-size: 15px !important;
+        }
+        h2{
+            margin-left: 250px;
+        }
+        ul{
+            margin-right: 5px;
+            
+        }
+        li{
+            padding-top: 10px;
+        }
+        
+        
+        
+        
+    </style>
+</head>
+<section>
+    <div>
+    <div class="h2">
+            <h2>&nbsp;&nbsp;&nbsp; Gallery <small>Welcome to OcusionOrbit</small></h2>
+            
+    
+                 
+            <ul class="breadcrumb float-md-right ">
+                <li class="breadcrumb-item"><a href="..\dashboard\index.html"><i class="zmdi zmdi-home"></i> OcusionOrbit</a></li>
+                                                <li class="breadcrumb-item">Specific-View-Managers</li>
+                                                                            <li class="breadcrumb-item active">id:{{mid.id}}</li>
+                                        </ul>
+        </div>
+   
+    
+    <div class="container mt-5">
+        <div class="row d-flex justify-content-center">
+            
+            <div class="col-md-7">
+                
+                <div class="card p-3 py-4">
+                    
+                    <div class="text-center">
+                        <img src="{{mid.img.url}}" style="height: 100px; width:100px;" class="rounded-circle">
+                    </div>
+                    
+                    <div class="text-center mt-3">
+                        <span class="bg-secondary p-1 px-4 rounded text-white">{{mid.username}}</span>
+                        <h5 class="mt-2 mb-0">Company Name : {{mid.companyname}}</h5>
+                        <span>Company Details : {{mid.Company_details}}</span>
+                        
+                        <div class="px-4 mt-1">
+                            <p class="fonts">Company Address : {{mid.company_address}}</p>
+                        
+                        </div>
+                        
+                        <div class="buttons">
+                            <div class="a"><i class="fa-solid fa-message" style="color: #eee;"></i> <a href="#">Message</a></div>
+                            <div class="b"><i class="fa-solid fa-address-book" style="color: #eee;"></i> <a href="#">Contact</a></div>
+                            <!-- <button class="btn btn-outline-primary px-4"><a href=""></a></button>
+                            <button class="btn btn-primary px-4 ms-3">Contact</button> -->
+                        </div>
+                        
+                        
+                    </div>
+                    
+                   
+                    
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+</section>
+{%endblock%}
