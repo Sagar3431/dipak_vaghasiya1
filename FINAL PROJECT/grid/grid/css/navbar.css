@@ -1,0 +1,126 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main
+{
+   
+    
+   background: transparent;
+   display: grid;
+   grid-template-columns: 30% 1fr;
+}
+.main .c
+{
+   padding-left: 30%;
+    height: 80px;
+   
+    background: transparent;
+}
+
+
+.main .d
+{
+    height: 80px;
+  line-height: 50px;
+    background: transparent;
+    
+}
+
+
+.main .nav
+{
+    background: transparent;
+    
+    display: grid;
+ 
+    align-items: center;
+    justify-content: center;
+    
+}
+.main .nav1
+{
+    background: transparent;
+   
+    padding: 15px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.main .nav .nav1 ul
+{
+    margin: 0;
+    padding: 0;
+}
+.main .nav .nav1 li
+{
+ 
+   display: inline;
+   padding: 30px;
+   font-size: 20px;
+   color: #333;
+ 
+   
+}
+.main .nav .nav1 li a
+{
+    display: inline-block;
+   text-decoration: none;
+   color: #333;
+}
+.main .nav .nav1 li a:hover
+{
+    color: #fcb900;
+}
+.main  .nav .nav1 .home
+{
+    border-bottom: 5px solid #fcb900;
+
+}
+.main .nav .nav1 .about
+{
+position: relative;
+padding: 30px 0; 
+}
+.main .nav .nav1 .about .about1
+{
+position: absolute;
+top: 100%;
+left: -50%; 
+width: 230px;
+background-color: red;
+text-align: left;
+line-height: 50px;
+border-bottom: 2px grey;
+background: gray;
+opacity: 0;
+/* padding-top: 30px; */
+transition: 1s;
+z-index: 1;
+
+}
+.main .nav .nav1 .about .about1 li
+{
+border: none;
+}
+.main  .nav .nav1 .about:hover .about1
+{
+opacity: 1;
+
+}
+.main  .nav .nav1 .about .about1 .about2
+{
+  border-bottom: 2px solid gray;
+  transition: 1s;
+  
+   background: #fff;
+   box-shadow: 0px 0px 10px grey ;
+}
+.main .nav .nav1 .about .about1 .about2 a:hover
+{
+   color: #fcb900;
+}

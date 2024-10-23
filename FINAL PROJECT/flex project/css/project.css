@@ -1,0 +1,215 @@
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.project
+{
+  width: 100%;
+    background: url(../img/bg_home.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+   
+}
+.project1
+{
+   color: #ff8b23; 
+   
+   text-align: center;
+   font-size: 30px;
+}
+.project2
+{
+    color: #fff; 
+    
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    padding: 20px;
+}
+.project3
+{    
+   
+    
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: space-evenly;
+   padding: 40px;
+    gap: 30px;
+    position: relative;
+}
+.project3 .ph1
+{
+  height: 200px;
+  width: 20%;
+  font-size: 50px;
+ 
+ 
+  text-align: center;
+  background: url(../img/img_03-451x304.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  opacity: 1;
+  transform: scale(1);
+  transition: 1s;
+  
+ 
+  
+}
+.ph1:hover
+{
+    transform: scale(1.1);
+    opacity: .3;
+}
+.project3 .ph2
+{
+    height: 200px;
+  width: 20%;
+  font-size: 50px;
+  text-align: center;
+  background: url(../img/img_04-451x304.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  opacity: 1;
+  transform: scale(1);
+  transition: 1s;
+}
+.ph2:hover
+{
+    transform: scale(1.1);
+    opacity: .3;
+}
+.project3 .ph3
+{
+    height: 200px;
+  width: 20%;
+  font-size: 50px;
+  text-align: center;
+  
+  background: url(../img/img_07-451x304.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  opacity: 1;
+  transform: scale(1);
+  transition: 1s;
+}
+.ph3:hover
+{
+    transform: scale(1.1);
+    opacity: .3;
+}
+.project3 .ph4
+{
+    height: 200px;
+  width: 20%;
+  font-size: 50px;
+  text-align: center;
+  background: url(../img/img_06-451x304.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  opacity: 1;
+  transform: scale(1);
+  transition: 1s;
+}
+.ph4:hover
+{
+    transform: scale(1.1);
+    opacity: .3;
+}
+.fa-search
+{
+    background: yellow;
+    
+}
+.ph1 .fa-search
+{
+    position: absolute;
+    top:-25% ;
+    left: 45%;
+    transition: 1s;
+opacity: 0;
+
+}
+.ph2 .fa-search
+{
+    position: absolute;
+    top:-25% ;
+    left: 45%;
+    opacity: 0;
+    transition: 1s;
+;
+}
+.ph3 .fa-search
+{
+    position: absolute;
+    top:-25% ;
+    left: 45%;
+    opacity: 0;
+    transition: 1s;
+}
+.ph4 .fa-search
+{
+    position: absolute;
+    top:-25% ;
+    left: 45%;
+    opacity: 0;
+    transition: 1s;
+}
+.ph1:hover .fa-search
+{
+ top: 40%;
+ opacity: 1;
+}
+.ph2:hover .fa-search
+{
+ top: 40%;
+ opacity: 1;
+}
+.ph3:hover .fa-search
+{
+ top: 40%;
+ opacity: 1;
+}
+.ph4:hover .fa-search
+{
+ top: 40%;
+ opacity: 1;
+}
+@media (max-width:500px)
+{
+    .project3
+    {
+        flex-direction: column;
+    }
+   
+   .project3 .ph1
+    {
+      
+        width: 100%;
+        
+    }
+    .project3 .ph2
+    {
+      
+        width: 100%;
+        
+    }
+    .project3 .ph3
+    {
+      
+        width: 100%;
+        
+    }
+    .project3 .ph4
+    {
+      
+        width: 100%;
+        
+    }
+    
+    .fa-search
+    {
+        opacity: 0;
+    }
+}

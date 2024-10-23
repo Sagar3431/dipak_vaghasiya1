@@ -1,0 +1,188 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.nav
+{
+    /* height: 80px; */
+    background: #10263b;
+    width: 100%;
+    display: flex;
+    /* position: fixed; */
+    
+    flex-wrap: wrap;
+}
+.nav1
+{
+    height: 80px;
+    width: 70%;
+    background: #10263b;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    
+}
+.nav1 a
+{
+    text-decoration: none;
+    font-size: 20px;
+    word-spacing: 2px;
+    color: white;
+    
+}
+.nav1 a:hover 
+{
+    color: yellow;
+}
+ul
+{
+    margin: 0;
+    padding: 0;
+}
+li
+{
+display: inline;
+padding-top: 5px;
+padding-right: 5px;
+border-right: 2px dashed black;
+}
+.home
+{
+    position: relative;
+    padding: 30px 0 ; 
+    
+    
+}
+.home1
+{
+    
+    /* display: inline; */
+    position: absolute;
+    top: 100%;
+    left: 0; 
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    line-height: 50px;
+    border-bottom: 2px grey;
+    opacity: 0;
+    /* padding-top: 30px; */
+    transition: 1s;
+    z-index: 1;
+    
+}
+
+.home1 li
+{
+    border: none;
+}
+.home:hover .home1
+{
+    opacity: 1;
+}
+.home2
+{
+    border-bottom: 2px solid gray;
+    transition: 1s;
+    background: #fff;
+}
+.home2:hover{
+    background: #337ab7;
+}
+.home .home1 .home2 a
+{
+    color: black;
+}
+
+.nav2
+{
+    height: 80px;
+    width: 30%;
+    background: #10263b;
+    padding-top: 15px;
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.nav2 input
+{
+    height: 50px;
+    width: 300px;
+    background: #10263b;
+    border: none;
+   color: #fff;
+   outline: none;
+}
+.nav2 i
+{
+    
+    background: #10263b;
+    height: 50px;
+    width: 50px;
+    font-size: 25px;
+    text-decoration: none;
+    color: #303030;
+    
+    
+}
+button
+{
+border: none;
+}
+
+.checkbtn{
+font-size: 30px;
+color: white;
+float: right;
+text-align: right;
+line-height: 80px;
+margin-right: 40px;
+cursor: pointer;
+display: none;
+}
+#check{
+display: none;
+}
+@media (max-width:500px)
+{
+.checkbtn
+{
+display: block;
+font-size: 50px;
+text-align: left;
+
+
+}
+
+.nav2
+{
+  display: none;
+
+}
+.nav1
+{
+overflow: hidden;
+height: 100vh;
+line-height: 80px;
+display: inline;
+
+
+}
+li
+{
+border: none;
+
+}
+.home1
+{
+    top: 50%;
+    left: 100%;
+}
+
+
+
+}

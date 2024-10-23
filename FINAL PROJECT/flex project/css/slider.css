@@ -1,0 +1,169 @@
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+ 
+}
+.slider
+{
+    height: 500px;
+    width: 100%;
+    background: url(../img/slider.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+   
+   
+    
+    
+}
+
+
+ .img1
+{
+    text-align: center;
+    
+    font-size: 30px;
+    color: #fff;
+    padding: 40px;
+    position: relative;
+    padding-left: 500px;
+    
+
+}
+.img1 h1
+{
+   
+    line-height: 70px;
+    /* padding-top: 140px;
+    padding-right: 70px; */
+}
+.img1 h1 span
+{
+    
+    font-size: 40px;
+    /* padding-left: 20px; */
+}
+.img p
+{
+  
+    font-size: 25px;
+    /* padding-right: 180px; */
+} 
+.slider .btn
+{
+   
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    top: 80%;
+    left: 0;
+    font-size: 20px;
+   
+   
+}
+.slider .btn .c
+{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    height: 70px;
+    width: 180px;
+    background: yellow;
+    text-align: center;
+    padding-top: 20px;
+    transition: 1s;
+    color: #fff;
+}
+.slider .btn .c a
+{
+    text-decoration: none;
+    color: #050505;
+}
+.slider .btn .c:hover
+{
+    background: rgb(89, 166, 237);
+    
+}
+.slider .btn .c a:hover 
+{
+color: #fff;
+}
+.slider .btn .d
+{
+    position: absolute;
+    top: 0%;
+    left: 65%;
+    height: 70px;
+    width: 180px;
+    background: rgb(89, 166, 237);
+    text-align: center;
+    padding-top: 20px;
+    transition: 1s;
+    color: #fff;
+    transition: 1s;
+}
+.slider .btn .d a
+{
+    text-decoration: none;
+    color: #050505;
+}
+.slider .btn .d:hover
+{
+    background: yellow;
+    
+}
+.slider .btn .d a:hover 
+{
+color: #fff;
+}
+@media (max-width:500px) {
+    .img1{
+        
+       text-align: center;
+       flex-direction: column;
+       padding-bottom: 300px;
+       background: none;
+       padding-left: 0;
+      
+       
+      
+    }
+  .img1 h1
+    {
+        font-size: 30px;
+        line-height: 50px;
+    }
+    .img1 span
+    {
+        font-size: 20px;
+    }
+    .img1 p
+    {
+        font-size: 20px;
+        line-height: 40px;
+    }
+    .btn
+    {
+        flex-direction: column;
+       
+    }
+    .btn .c
+    {
+      margin-left: 50px;
+      display: none;
+
+    }
+    .btn .d
+    {
+        display: none;
+      margin-left: -250px;
+      
+    }
+}

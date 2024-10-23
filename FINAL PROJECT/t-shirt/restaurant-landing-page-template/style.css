@@ -1,0 +1,379 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+a{
+    color: white;
+}
+.main,
+.section1,
+.section2,
+.section,
+.section4,
+.section5,
+.section6
+{
+    height: 100%;
+    width: 100%;
+    border-bottom:  1px solid #ffc200;
+}
+.section1{
+    display: none;
+    display: flex;
+    background: #f4f0f0;
+}
+.left{
+    width: 41%;
+    background-image: url(./topbg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 20px 0 0 40px;
+}
+.right
+{
+    width: 79%;
+    padding: 20px;
+    background-image: url(./top.png);
+    background-size: auto;
+    background-position:-30% ;
+    background-repeat: no-repeat;
+}
+.navbar{
+    width: 80%;
+    padding: 15px;
+    background: black;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 25px;
+    justify-content: space-between;
+    color: white;
+}
+
+.section2{
+    text-align: center;
+    padding: 40px;
+   
+}
+
+.section2 .s2-details{
+    width: 60%;
+    margin: auto;
+}
+.section2 .s2-details h3{
+    font-family: 'Grand Hotel', cursive;
+    font-size: 4rem;
+}
+.section2 .s2-details p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    padding-bottom: 20px;
+}
+
+.section2 .s2-card{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.s2-card img{
+    width: 40%;
+    border-radius: 50%;
+    object-fit: contain;
+    object-position: center;
+}
+.card-details{
+    width: 70%;
+    margin: auto;
+}
+.card-details h4{
+    font-family: 'Grand Hotel', cursive;
+    font-size: 2.5rem;
+    padding-top: 20px;
+}
+.card-details p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+
+.a3{
+    width: 100%;
+    background-image: url(./bottom1.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 108%;
+    margin-top: 130px;
+    position: relative;
+}
+button{
+    background: #ffc200;
+    color: #333333;
+    padding: 10px 30px;
+    border-radius: 40%;
+    outline: none;
+    border: none;
+}
+.a3details{
+    width: 35%;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+}
+
+ .title{
+    font-family: 'Grand Hotel', cursive;
+    font-size: 3rem;
+    color:  #ffc200;
+}
+.para{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    padding-bottom: 20px;
+    color: white;
+}
+.a3 img{
+    width: 25%;
+    border-radius: 50%;
+    object-fit: contain;
+    object-position: center;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+
+.b3{
+    background: #2f2f2f;
+    padding-top: 100px;
+    position: relative;
+    
+}
+.b3 .b3details{
+    width: 55%;
+    margin: auto;
+    text-align: center;
+}
+.b1rounds{
+    margin: auto;
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 1px solid #ffc200; */
+}
+.b3round{
+    border: 5px solid white;
+    border-radius: 50%;
+   
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.b3round h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #ffc200;
+}
+.b3round h4{
+    color: white;
+}
+
+.c3 {
+    background-image: url(./bottom2.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: stretch;
+    position: relative;
+}
+.c3 .c3details{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 30%;
+}
+.c3 img{
+   
+        width: 25%;
+        border-radius: 50%;
+        object-fit: contain;
+        object-position: center;
+        position: absolute;
+        top: 25%;
+        right: 10%;
+}
+
+.section4{
+    height: 100%;
+    width: 100%;
+    background-image: url(./lenora\ Fields.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.s4details{
+    width: 40%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.section4 .s4details h3{
+    font-family: 'Grand Hotel', cursive;
+    font-size: 4rem;
+}
+.section4 .s4details p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    padding-bottom: 20px;
+}
+.s4layer
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(255, 194, 0.2);
+    opacity: 0.8;
+}
+
+.section5{
+    height: 100%;
+    width: 100%;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.s5details{
+    width: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.s5details h3{
+    color: #ffc200;
+    font-family: 'Grand Hotel', cursive;
+    font-size: 4rem;
+}
+.s5details p{
+    color: rgb(54, 54, 54);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+}
+input{
+    padding: 10px 60px;
+    outline: none;
+    border: none;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section6{
+    background-color:  #303030;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+.lefts6{
+    width: 40%;
+    padding-left: 80px;
+    
+}
+.socialicons{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+span{
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: white;
+    color: #333333;
+    font-size: 24px;
+}
+i{
+    font-size: 18px;
+}
+
+
+.rights6{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section6 .rights6 ul{
+    margin: 0;
+    padding: 0;
+    
+}
+.section6 .rights6 ul li a{
+    text-decoration: none;
+    color: white;
+}
+.about{
+    display: inline;
+}
+li{
+    padding: 3px 0px;
+}
+.d
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width:500px)
+{
+    .dipak
+    {
+        flex-direction: column;
+    }
+    .a
+    {
+        width: 100%;
+        height: 500px;
+    }
+    .b
+    {
+        width: 100%;
+        height: 500px;
+        background: red;
+    }
+    
+}

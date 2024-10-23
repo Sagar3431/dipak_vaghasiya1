@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&family=Oswald&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        *
+        {
+            margin: 0;padding: 0;box-sizing: border-box;
+        }
+        .main
+        {
+            height: 600px;
+            width: 100%;
+            background: url(img/a.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+        .main .main1
+        {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: #303030;
+        }
+        .main .main1 .main2
+        {
+            width: 20%;
+           text-align: center;
+           display: flex;
+           flex-wrap: wrap;
+           justify-content: center;
+           align-items: center;
+          
+        }
+
+        .main .main1 .main2 img
+        {
+            height: 60px;
+            width: 150px;
+            text-align: center;
+            
+        }
+        .main .main1 .main3
+        {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            width: 70%;
+           
+        }
+        .nav
+        {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+          
+            font-family: Oswald;
+            
+            
+        }
+        ul
+        {
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            display: inline;
+            
+        }
+        .nav a
+        {
+            text-decoration: none;
+            list-style: none;
+            font-size: 20px;
+           padding-right: 50px;
+           color: #ffffff;
+           
+        }
+        .main .main1 .main4
+        {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding-top: 20px;
+            width: 10%;
+           text-align: center;
+           line-height: 100px;
+        }
+        .main .main1 .main4 img
+        {
+            height: 30px;
+            width: 30px;
+            text-align: center;
+            
+        }
+        @media (max-width:500px)
+        {
+            .main
+            {
+                flex-direction: column;
+            }
+            
+            .main2
+            {
+                width: 100%;
+                flex-basis: 500px;
+                padding-top: 10px;
+            }
+            .main3
+            {
+                width: 100%;
+                flex-basis: 400px;
+            }
+            .main4
+            {
+                width: 100%;
+                flex-basis: 300px;
+            }
+           
+            .nav
+            {
+                display: none;
+            }
+            .main6
+            {
+              display: none;
+            }
+        }
+
+        .main .main7
+        {
+            position: absolute;
+            bottom: 0%;
+            left: 10%;
+            padding: 30px;
+            text-align: left;
+            line-height: 40px;
+            font-family: Oswald;
+            font-size: 20px; 
+        }
+        .main .main7 .main8
+        {
+           
+            padding: 50px ;
+            
+
+        }
+
+        .main .main7 .main8 button
+        {
+           padding: 10px 30px;
+           background: #e8631c;
+           border: none;
+           color: #ffffff;
+           font-family: oswald;
+        }
+        .main .main7 .main8
+        {
+            color: #ffffff;
+        }
+
+
+
+        
+
+      .slider
+      {
+        background: #e8631c;
+        padding: 40px;
+      }
+      .slider .slider1
+      {
+       
+        padding: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      
+      }
+      .slider .slider1 .s1
+      {
+        padding: 30px;
+        
+       
+      }
+      .slider .slider1 .s1 h1
+      {
+        font-size: 40px;
+        text-align: center;
+        font-family: Oswald;
+        font-weight: bold;
+        color: #ffffff;
+        letter-spacing: 2px;
+      }
+      .slider .slider1 .s1 p
+      {
+         font-size: 20px;
+         color: #ffffff;
+         font-family: 'Montserrat', sans-serif;
+         text-align: left;
+         line-height: 30px;
+
+      }
+
+
+      .slider .slider2
+      {
+        
+        padding: 30PX;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+ 
+        
+      }
+      .slider .slider2 .s2
+      {
+        padding: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+       
+        gap: 30px;
+       
+      }
+      .slider .slider2 .s2 .a1
+      {
+       width: 300px;
+        background: #303030;
+      }
+      .slider .slider2 .s2 h2
+      {
+        text-align: center;
+        line-height: 30px;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-family: Oswald;
+      }
+      .slider .slider2 .s2 p
+      {
+        text-align: center;
+        font-size: 22px;
+        color: #ffffff;
+        font-family: 'Montserrat', sans-serif;
+      }
+
+
+      .slider .slider2 .s2 .a2
+      {
+        width: 300px;
+       
+        background: #303030;
+      }
+      .slider .slider2 .s2 h2
+      {
+        text-align: center;
+        line-height: 30px;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-family: Oswald;
+      }
+      .slider .slider2 .s2 p
+      {
+        text-align: center;
+        font-size: 22px;
+        color: #ffffff;
+        font-family: 'Montserrat', sans-serif;
+      }
+
+      .slider .slider2 .s2 .a3
+      {
+        width: 300px;
+        background: #303030;
+      }
+      .slider .slider2 .s2 h2
+      {
+        text-align: center;
+        line-height: 30px;
+        letter-spacing: 2px;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-family: Oswald;
+      }
+      .slider .slider2 .s2 p
+      {
+        text-align: center;
+        font-size: 22px;
+        color: #ffffff;
+        font-family: 'Montserrat', sans-serif;
+      }
+
+      .card
+      {
+        background: #303030;
+        padding: 40px;
+      }
+      .card .card1
+      {
+       
+        padding: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      
+      }
+      .card .card .b1
+      {
+        padding: 30px;
+        
+       
+      }
+      .card .card1 .b1 h1
+      {
+        font-size: 40px;
+        text-align: center;
+        font-family: Oswald;
+        font-weight: bold;
+        color: #ffffff;
+      }
+      .card .card1 .b1 p
+      {
+         font-size: 20px;
+         color: #ffffff;
+         font-family: 'Montserrat', sans-serif;
+         text-align: left;
+         line-height: 30px;
+
+      }
+
+
+      .card .card2
+      {
+        
+        padding: 30PX;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        line-height: 40px;
+ 
+        
+      }
+      .card .card2 .b2
+      {
+        padding: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+       
+        gap: 30px;
+       
+      }
+      .card .card2 .b2 .b3
+      {
+       width: 300px;
+        background: #e8631c;
+        padding: 20px;
+        text-align: center;
+      }
+      .card .card2 .b2 h2
+      {
+        text-align: center;
+        line-height: 30px;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-family: Oswald;
+      }
+      .card .card2 .b2 p
+      {
+        text-align: center;
+        font-size: 22px;
+        color: #ffffff;
+        font-family: 'Montserrat', sans-serif;
+      }
+
+
+      .card .card2 .b2 .b4
+      {
+        width: 300px;
+        padding: 20px;
+        text-align: center;
+        background: #e8631c;
+      }
+      .card .card2 .b2 h2
+      {
+        text-align: center;
+        line-height: 30px;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-family: Oswald;
+      }
+      .card .card2 .b2 p
+      {
+        text-align: center;
+        font-size: 22px;
+        color: #ffffff;
+        font-family: 'Montserrat', sans-serif;
+      }
+
+      .card .card2 .b2 .b5
+      {
+        width: 300px;
+        background: #e8631c;
+        padding: 20px;
+        text-align: center;
+
+      }
+      .card .card2 .b2 h2
+      {
+        text-align: center;
+        line-height: 30px;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-family: Oswald;
+      }
+      .card .card2 .b2 p
+      {
+        text-align: center;
+        font-size: 22px;
+        color: #ffffff;
+        font-family: 'Montserrat', sans-serif;
+      }
+      .card .card2 .b2 button
+      {
+        background: #303030;
+        color: #ffffff;
+        font-family: Oswald;
+        padding: 10px;
+        padding: 0px 90px;
+        text-align: center;
+        line-height: 40px;
+        border: none;
+        border-radius: 5px;
+        
+      }
+    .contant
+    {
+        background: #e8631c;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    .contant .c1{
+       width: 50%;
+    }
+   
+
+    .contant .c2
+    {
+       
+        width: 50%;
+        padding: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .contant .c3
+    {
+       
+        padding: 20px;
+        
+    }
+
+    .contant .c3 h1
+    {
+        font-size: 80px;
+        font-family: Oswald;
+        font-weight: bold;
+        color: #ffffff;
+        letter-spacing: 2px;
+    }
+    .contant .c3 p
+    {
+        font-family: 'Montserrat', sans-serif;
+        color: #ffffff;
+        font-size: 30px;
+      
+    }
+
+    .contant .c3 button
+    {
+        margin-top: 20px;
+        font-family: Oswald;
+        background: #303030;
+       text-align: center;
+       line-height: 30px;
+        padding: 0px 80px;
+        color: #ffffff;
+        border: none;
+        border-radius: 5px;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+     @media (max-width:500px)
+     {
+       .contant
+       {
+        flex-direction: column;
+       }
+       .contant .c1
+       {
+        width: 100%;
+       }
+       .contant .c2
+       {
+        width: 100%;
+       }
+     
+     }
+
+   
+     .contant1
+    {
+        background: #e8631c;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    .contant1 .d2
+    {
+        width: 50%;
+    }
+
+    .contant1 .d1
+    {
+       
+        width: 50%;
+        padding: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .contant1 .d3
+    {
+       
+        padding: 20px;
+        
+    }
+
+    .contant1 .d3 h1
+    {
+        font-size: 80px;
+        font-family: Oswald;
+        font-weight: bold;
+        color: #ffffff;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    .contant1 .d3 p
+    {
+        font-family: 'Montserrat', sans-serif;
+        color: #ffffff;
+        font-size: 30px;
+      
+    }
+
+    .contant1 .d3 button
+    {
+        margin-top: 20px;
+        font-family: Oswald;
+        background: #303030;
+       text-align: center;
+       line-height: 30px;
+        padding: 0px 80px;
+        color: #ffffff;
+        border: none;
+        border-radius: 5px;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+
+    @media (max-width:500px)
+    {
+        .contant1
+        {
+            flex-direction: column;
+        }
+        .contant1 .d1
+        {
+            width: 100%;
+        }
+        .contant1 .d2
+        {
+            width: 100%;
+        }
+    }
+
+    .center
+    {
+        background: #303030;
+        padding: 40px;
+    }
+
+    .center .center1
+      {
+       
+        padding: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        
+      
+      }
+      .center .center1 .e
+      {
+        padding: 30px;
+        
+       
+      }
+      .center .center1 .e h1
+      {
+        font-size: 40px;
+        text-align: center;
+        font-family: Oswald;
+        font-weight: bold;
+        color: #ffffff;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+      .center .center1 .e p
+      {
+         font-size: 20px;
+         color: #ffffff;
+         font-family: 'Montserrat', sans-serif;
+         text-align: center;
+         line-height: 30px;
+         padding-top: 50px;
+
+      }
+
+      .center .center2
+      {
+        
+        padding: 30PX;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        line-height: 40px;
+ 
+        
+      }
+      .center .center2 .e1
+      {
+        padding: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+       
+        gap: 30px;
+       
+      }
+      .center .center2 .e1 .e2
+      {
+       width: 300px;
+        padding: 20px;
+        text-align: center;
+      }
+      .center .center2 .e1 h1
+      {
+        text-align: center;
+        line-height: 30px;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-family: Oswald;
+      }
+      .center .center2 .e1 p
+      {
+        text-align: center;
+        font-size: 22px;
+        color: #ffffff;
+        font-family: 'Montserrat', sans-serif;
+      }
+
+
+      .center .center2 .e1 .e3
+      {
+        width: 300px;
+        padding: 20px;
+        text-align: center;
+        
+      }
+      .center .center2 .e1 h1
+      {
+        text-align: center;
+        line-height: 30px;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-family: Oswald;
+      }
+      .center .center2 .e1 p
+      {
+        text-align: center;
+        font-size: 22px;
+        color: #ffffff;
+        font-family: 'Montserrat', sans-serif;
+      }
+
+      .center .center2 .e1 .e4
+      {
+        width: 300px;
+       
+        padding: 20px;
+        text-align: center;
+
+      }
+      .center .center2 .e1 h1
+      {
+        text-align: center;
+        line-height: 30px;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-family: Oswald;
+      }
+      .center .center2 .e1 p
+      {
+        text-align: center;
+        font-size: 22px;
+        color: #ffffff;
+        font-family: 'Montserrat', sans-serif;
+      }
+
+      .dipak
+      {
+        height: 500px;
+        width: 100%;
+        background: url(img/8.png);
+        background-size: 100% 100%; 
+        background-repeat: no-repeat;
+        position: relative;
+        z-index: -2;
+      }
+      .dipak::after
+      {
+        content: "";
+        background: #3e1a07;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: .7;
+        z-index: -1;
+      }
+    
+      .dipak .f
+      {
+       
+       
+        padding: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+        text-align: center;
+        font-size: 40px;
+        padding-top: 130px;
+        z-index: 0;
+
+      }
+      .dipak .f .f2 p
+      {
+        font-family: 'Montserrat', sans-serif;
+      }
+      .dipak .f .f2 h2
+      {
+        text-transform: uppercase;
+        font-family: Oswald;
+      }
+
+      @media (max-width:500px)
+      {
+        .dipak
+        {
+          width: 100%;
+          
+          
+        }
+        .dipak .f
+        {
+          width: 100%;
+          font-size: 20px;
+          
+        }
+        
+      }
+
+      .footer
+      {
+        background: #e8631c;
+        padding: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        line-height: 60px;
+        color: #ffffff;
+      }
+      .footer .g
+      {
+        
+        padding: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+      .footer .g .g1
+      {
+        padding: 30px;
+       
+       
+      }
+      .footer .g .g1 h1
+    {
+       font-size: 70px;
+       font-family: Oswald;
+       letter-spacing: 2px;
+    }
+    .footer .g .g1 p
+    {
+      font-size: 30px;
+      font-family: 'Montserrat', sans-serif;
+    }
+    .footer .g .g1 input
+    {
+      width: 50%;
+      height: 50px;
+      border: none;
+      outline: none;
+      font-size: 20px;
+    }
+    .footer .g .g1 button
+    {
+      background: #303030;
+      color: #ffffff;
+      padding: 20px 40px;
+      border: none;
+      text-transform: uppercase;
+    }
+
+    @media (max-width:500px)
+    {
+      .g
+      {
+        width: 100%;
+      }
+      .footer .g .g1 input
+      {
+        width: 100%;
+      }
+      .footer .g .g1 button
+      {
+        width: 100%;
+      }
+      
+    }
+
+    .footer1
+    {
+      background: #303030;
+      padding: 40px;
+    }
+    .footer1 .h
+    {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 30px;
+      background: transparent;
+      justify-content: center;
+      align-items: center;
+      color: #ffffff;
+      gap: 20px;
+      
+      
+    }
+    .footer1 .h1
+    {
+      width: 30%;
+      background: transparent;
+    }
+    .footer1 .h1 h1
+    {
+      font-size: 33px;
+      font-family: Oswald;
+      text-transform: uppercase;
+    }
+    .footer1 .h1 p
+    {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 20px
+    }
+    .footer1 .h1 .h5
+    {
+      padding: 20px 0px;
+    }
+    .footer1 .h2
+    {
+      width: 20%;
+      background: transparent;
+      text-align: left;
+      line-height: 37px;
+      
+    }
+    .footer1 .h2 p
+    {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 20px
+    }
+    .footer1 .h2 h1
+    {
+      font-size: 33px;
+      font-family: Oswald;
+    }
+    .footer1 .h3
+    {
+      width: 20%;
+      background: transparent;
+      text-align: left;
+      line-height: 37px;
+    }
+    .footer1 .h3 h1
+    {
+      font-size: 33px;
+      font-family: Oswald;
+      text-transform: uppercase;
+    }
+    .footer1 .h3 p
+    {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 20px
+    }
+    .footer1 .h4
+    {
+      width: 20%;
+      background: transparent;
+      margin-bottom: 78px;
+      text-align: left;
+      line-height: 37px;
+    }
+    .footer1 .h4 h1
+    {
+      font-size: 33px;
+      font-family: Oswald;
+      text-transform: uppercase;
+    }
+    .footer1 .h4 p
+    {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 20px
+    }
+
+
+    @media (max-width:500px)
+    {
+      .footer1 .h1
+      {
+        width: 100%;
+      }
+      .footer1 .h2
+      {
+        width: 100%;
+      }
+      .footer1 .h3
+      {
+        width: 100%;
+      }
+      .footer1 .h4
+      {
+        width: 100%;
+      }
+    }
+     
+      
+      
+
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+          
+           <div class="main1">
+             <div class="main2">
+               <div class="main5"> <img src="img/b.png" alt="" height="50%" width="100%" style="object-fit: cover;"></div>
+             </div>
+             <div class="main3">
+                <div class="nav">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Product</a></li>
+                        <li><a href="#">Promo</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+             </div>
+             <div class="main4">
+                <div class="main6">
+                    <img src="img/c.png" alt="" height="100%" width="20%">
+                </div>
+             </div>
+           </div>
+
+           <div class="main7">
+            <div class="main8">
+                <h1>Title Here</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Vivamus lacinia odio vitae <br> vestibulum vestibulum. </p>
+                <button>Register Now</button>
+            </div>
+           </div>
+    </div>
+
+    <div class="slider">
+        <div class="slider1">
+            <div class="s1">
+                <h1>Dance Tour</h1>
+                <p>orem ipsum dolor sit amet, consectetur adipiscing elit. <br> Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+            </div>
+        </div>
+
+        <div class="slider2">
+            <div class="s2">
+                <div class="a1">
+                       <img src="img/1.png" alt="" height="250px" width="100%">
+                       <h2>America</h2>
+                       <p>Lorem ipsum dolor sit amet, consectetur </p>
+                </div>
+                <div class="a2">
+                    <img src="img/2.png" alt="" height="250px" width="100%">
+                    <h2>asia</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur </p>
+                </div>
+                <div class="a3">
+                    <img src="img/3.png" alt="" height="250px" width="100%">
+                    <h2>Australia</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card1">
+            <div class="b1">
+                <h1>Pricing</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+            </div>
+        </div>
+        <div class="card2">
+            <div class="b2">
+                <div class="b3">
+                    <img src="img/5.png" alt="" height="200px" width="50%">
+                    <h2>America</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur </p>
+                    <button>$150.00</button>
+             </div>
+             <div class="b4">
+                 <img src="img/5.png" alt="" height="200px" width="50%">
+                 <h2>asia</h2>
+                 <p>Lorem ipsum dolor sit amet, consectetur </p>
+                 <button>$200.00</button>
+             </div>
+             <div class="b5">
+                 <img src="img/5.png" alt="" height="200px" width="50%">
+                 <h2>Australia</h2>
+                 <p>Lorem ipsum dolor sit amet, consectetur </p>
+                 <button>$250.00</button>
+             </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contant">
+        <div class="c1"><img src="img/7.png" alt="" height="100%" width="100%" ></div>
+        <div class="c2">
+            <div class="c3">
+                <h1>AMAZING DANCE</h1>
+                <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit. Vivamus <br> lacinia odio vitae vestibulum </p>
+                <button>read more</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="contant1">
+        <div class="d1">
+            <div class="d3">
+                <h1>Best dance</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Vivamus lacinia odio vitae <br> vestibulum vestibulum. </p>
+                <button>read more</button>
+            </div>
+        </div>
+        <div class="d2"><img src="img/6.png" alt="" height="100%" width="100%"></div>
+    </div>
+
+    <div class="center">
+        <div class="center1">
+            <div class="e">
+                <h1>Our Statistics</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Vivamus lacinia odio vitae vestibulum vestibulum. </p>
+            </div>
+        </div>
+        <div class="center2">
+            <div class="e1">
+                <div class="e2">
+                     <h1>1240+</h1>
+                     <p>Club</p>
+                </div>
+                <div class="e3">
+                      <h1>2000+</h1>
+                      <p>Active Member</p>
+                </div>
+                <div class="e4">
+                       <h1>1.000+</h1>
+                       <p>Community</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dipak">
+      <div class="f">
+                
+               <div class="f2">
+                <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Vivamus lacinia odio vitae <br> vestibulum vestibulum</p>
+                <h2>Herbert Simon</h2>
+               </div>
+      </div>
+    </div>
+
+    <div class="footer">
+       <div class="g">
+        <div class="g1">
+          <h1>SUBSCRIBE</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+          <input type="text" placeholder="Your Email"><button>Subscribe</button>
+        </div>
+       </div>
+    </div>
+
+    <div class="footer1">
+      <div class="h">
+        <div class="h1">
+          <h1>Musicology</h1>
+          <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit. Aliquam at <br> dignissim nunc, id maximus ex. Etiam <br>nec dignissim elit, at dignissim enim.</p>
+           <div class="h5">
+            <img src="img/Instagram.png" alt="" height="30x" width="30px">
+            <img src="img/Facebook.png" alt="" height="30px" width="30px">
+            <img src="img/Twitter.png" alt="" height="30px" width="30px">
+            <img src="img/WhatsApp.png" alt="" height="30px" width="30px">
+           </div>
+        </div>
+        <div class="h2">
+          <h1>About</h1>
+          <p>History</p>
+          <p>Our Team</p>
+          <p>Brand Guidelines</p>
+          <p>Terms & Condition</p>
+          <p>Privacy Policy</p>
+          
+        </div>
+        <div class="h3">
+          <h1>Services</h1>
+          <p>How to Order</p>
+          <p>Our Product</p>
+          <p>Order Status</p>
+          <p>Promo</p>
+          <p>Payment Method</p>
+        </div>
+        <div class="h4">
+          <h1>Other</h1>
+          <p>Contact Us</p>
+          <p>Help</p>
+          <p>Privacy</p>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

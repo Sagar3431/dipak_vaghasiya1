@@ -1,0 +1,153 @@
+*
+    {
+        margin: 0;padding: 0;box-sizing: border-box;
+    }
+    .dj
+    {
+        
+        background: transparent;
+        display: flex;
+        
+        flex-wrap: wrap;
+    }
+    .dj1
+    {
+        
+        width: 50%;
+        background: transparent;
+        text-align: center;
+        line-height: 30px;
+        padding: 30px;
+       
+    }
+    
+    .dj2
+    {
+        
+        width: 50%;
+        background: transparent;
+        padding: 40px;
+       
+        
+    }
+    .mdj3
+    {
+        background:  transparent;
+        height: 320px;
+        padding:5px 5px;
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    .mdj4
+    {
+        background: transparent;
+       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+       gap: 5px;
+        
+       
+    }
+    .mdj4 img
+    {
+      
+        height: 100px;
+        width: 200px;
+        object-fit: cover;
+       border: 1px solid #ebebeb;
+        transition: 1s;
+    }
+    .mdj4 img:hover{
+        border: 2px solid #337ab7;
+        border-radius: 50px;
+    }
+    .g1
+    {
+        
+        background: transparent;
+       
+        padding-top: 50px;
+        
+     }
+     .g2
+     {
+        height: 300px;
+        width: 80%;
+        background: transparent;
+        padding-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+       
+        line-height: 50px;
+        border: 5px solid grey;
+        
+     }
+     .g2 input
+     {
+        height: 40px;
+        width: 300px;
+        font-size: 20px;
+        
+     }
+     .g3 select
+     {
+        height: 40px;
+        width: 300px;
+        font-size: 20px;
+     }
+     .g4 button
+     {
+        height: 50px;
+        width: 150px;
+        font-weight: 600;
+        background: #fab90a;
+        border: 2px solid #fab90a;
+     }
+     .g4 button:hover
+     {
+        background: #171F27;
+        border: 2px solid #171F27;
+        color: #ffffff;
+     }
+     
+     @media (max-width:500px)
+     {
+        .dj
+        {
+            flex-direction: column;
+           
+        }
+        .dj1
+        {
+            width: 100%;
+            height: 1100px;
+            
+        }
+        .mdj3
+        {
+            width: 100%;
+        }
+        .mdj4
+        {
+            width: 100%;
+         
+        }
+        
+        .dj2
+        {
+            width: 100%;
+        }
+        .g2 input
+        {
+            width: 200px;
+        }
+        .g3 select
+        {
+            width: 200px;
+        }
+     }

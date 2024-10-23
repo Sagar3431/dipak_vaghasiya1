@@ -1,0 +1,61 @@
+@import url(slider.css);
+@import url(nav.css);
+@import url(card.css);
+@import url(first.css);
+/* @import url(photos.css); */
+@import url(bar.css);
+@import url(news.css);
+@import url(project.css);
+@import url(s1.css);
+@import url(subheader.css);
+@import url(har.css);
+@import url(dj.css);
+@import url(footer.css);
+
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.header
+{
+    width: 100%;
+    height: 50px;
+    background: conic-gradient(#abb8c3 34%,#e1dfdf);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 15px;
+}
+.header1
+{
+    width: 50%;
+    
+}
+.header2
+{
+    width: 50%; 
+
+}
+.header2 span
+{
+    font-weight: 800;
+}
+@media (max-width:500px)
+{
+    .header1
+    {
+        width: 100%;
+    }
+    .header2
+    {
+        width: 100%;
+    } 
+    .header
+    {
+        flex-direction: column;
+    }
+
+}
